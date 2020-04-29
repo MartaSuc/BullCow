@@ -1,5 +1,5 @@
 #include "BullCowCartridge.h"
-#include "C:\Users\elzbi\Documents\Unreal Projects\BullCowGame-starter-kit\Intermediate\ProjectFiles\WordList.h"
+#include "WordList.h"
 
 void UBullCowCartridge::BeginPlay() // When the game starts
 {
