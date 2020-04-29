@@ -20,16 +20,15 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
 void UBullCowCartridge::SetupGame()
 {
     HiddenWord = GetValidWord(Words);
-   // HiddenWord = TEXT("cadek");
     Lives = HiddenWord.Len();
     bGameOver = false;
 
-    //powitanie
+    //welcome
     PrintLine(TEXT("Welcome. Guess a %i letter word."), HiddenWord.Len());
     PrintLine(TEXT("You have %i lives."), Lives);
     PrintLine(TEXT("You will get Bull for each guessed letter or Cow if letter is in wrong place."));
     PrintLine(TEXT("Remember the word is isogram.\nPress enter to start."));
-   // PrintLine(TEXT("HiddenWord: %s."), *HiddenWord);
+   // PrintLine(TEXT("HiddenWord: %s."), *HiddenWord);  //debug line
 }
 FString UBullCowCartridge::GetValidWord(const TArray <FString>& Words) const
 {
@@ -84,7 +83,7 @@ void UBullCowCartridge::ProcessGuess(const FString& Guess)
     }
     else
     {
-        //show bullsCows 
+        //show BullsCows 
         GetBullsCowsCount(Guess);
         PrintLine(TEXT("You have %i lives remainig."), Lives);
     }
