@@ -1,4 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 #include "BullCowCartridge.h"
 #include "C:\Users\elzbi\Documents\Unreal Projects\BullCowGame-starter-kit\Intermediate\ProjectFiles\WordList.h"
 
@@ -111,6 +110,4 @@ void UBullCowCartridge::GetBullsCowsCount(const FString& Word) const
         for (int32 i = 0; i < Word.Len(); i++) if (Help[i] != HiddenWord[i]) Help[i] = '*';
         PrintLine(TEXT("Clue: %s"),*Help);
     }
-    
-
 }
