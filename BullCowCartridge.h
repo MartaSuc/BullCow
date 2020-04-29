@@ -19,7 +19,6 @@ public:
 	bool IsIsogram(const FString& Word) const;
 	void GetBullsCowsCount(const FString& Word) const;
 
-	// Your declarations go below!
 private:
 	FString HiddenWord;
 	bool bGameOver;
